@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "PosterMagic",
-    "slug": "PosterMagic",
+    "name": "ApnaFoto",
+    "slug": "ApnaFoto-App",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,10 +15,34 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "navigationBar": {
+        "backgroundColor": "#FFFFFF",
+        "buttonColor": "dark"
+      },
+      "package": "com.saifuddinansari.ApnaFoto"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-navigation-bar",
+        {
+          "backgroundColor": "#FFFFFF",
+          "style": "dark"
+        }
+      ]
+    ],
+    "extra": {
+      "expo-navigation-bar": {
+        "backgroundColor": "#FFFFFF",
+        "style": "dark"
+      },
+      "eas": {
+        "projectId": "4a50be3c-50cf-4ffe-9956-7f6d3de4a7c7"
+      }
     }
   }
 }
