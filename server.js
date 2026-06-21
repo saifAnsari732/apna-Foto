@@ -7,6 +7,7 @@ const authRoutes = require('./routes/auth');
 const paymentRoutes = require('./routes/payment');
 const aiRoutes = require('./routes/ai');
 const imagekitRoutes = require('./routes/imagekit');
+const templateRoutes = require('./routes/template');
 
 const app = express();
 app.use(cors());
@@ -23,6 +24,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/payment', paymentRoutes);
 app.use('/api/ai', aiRoutes);
 app.use('/api/imagekit', imagekitRoutes);
+app.use('/api/templates', templateRoutes);
 
 app.get('/', (req, res) => {
   res.send('PosterMagic Backend is running!');
